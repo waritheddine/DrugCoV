@@ -14,12 +14,16 @@ The whole dataset contains five part:
 https://drive.google.com/file/d/1KfoscGS99OZOtP6WEoBiFTT3nggERT_e/view?usp=sharing
 
 - folder containing the pretrained Knowledge Graph Embedding using the entire dglke.tsv using the DGLKE methods: The embedding file is trained using Distmult model that utilizes the $cosinus$ distance. It is worthy of mention, that the pretrained Knowledge Graph Embedding can be obtained by following these steps:
+
   a) Execute the python file "Train-dglke.py" in order to split the dile to "dglke.tsv" file in training, validation and testing data.
+  
   b) Execute this command in order to generate the four files:
+  
 ```
 DGLBACKEND=pytorch dglke_train --dataset DGLKE --model_name DistMult --batch_size 2000 --neg_sample_size 1500 --hidden_dim 1800 --gamma 19.9 --lr 0.25 --max_step 300000 --log_interval 100 --batch_size_eval 16 -adv --regularization_coef 1.00E-09 --test --data_path ./train/ --format raw_udd_hrt --data_files dglke_train.tsv dglke_valid.tsv dglke_test.tsv --neg_sample_size_eval 10000
 ```
 there are four generated files:
+
      1) DGLKE_DistMult_entity.npy, NumPy binary data, storing the entity embedding
      
      2) DGLKE_DistMult_relation.npy, NumPy binary data, storing the relation embedding
