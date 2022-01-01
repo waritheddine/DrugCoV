@@ -21,9 +21,13 @@ DGLBACKEND=pytorch dglke_train --dataset DGLKE --model_name DistMult --batch_siz
 ```
 there are four generated files:
      1) DGLKE_DistMult_entity.npy, NumPy binary data, storing the entity embedding
+     
      2) DGLKE_DistMult_relation.npy, NumPy binary data, storing the relation embedding
-     3) entities.tsv, mapping from entity_name to entity_id.
+     
+     3) entities.tsv, mapping from entity_name to entity_id
+     
      4) relations.tsv, mapping from relation_name to relation_id
+     
    To use the pretrained embedding, one can use np.load to load the entity embeddings and relation embeddings separately:
 
 ```
