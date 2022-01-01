@@ -1,6 +1,7 @@
 # DrugCoV
 Discovering New Drug-Target Interactions for the COVID-19 Through Knowledge Graph Embedding.
 Authors: Warith Eddine DJEDDI and Sadok BEN YAHIA
+
 Email: waritheddine.jeddi@isikef.u-jendouba.tn
 # Quick start
 To reproduce our results:
