@@ -1,9 +1,13 @@
 # DrugCoV
 Discovering New Drug-Target Interactions for the COVID-19 Through Knowledge Graph Embedding.
 
+This tools presents a knowledge-graph (KG)-based, deep learning approach to discover potential drug-target interaction for COVID-19. Specifically,
+the approach is based on drug repositioning from the association between different phenotypic, genomic, diseases, and cellular profiles, focusing only on the genes associated with the COVID-19 disease. After applying a knowledge graph embedding on a heterogeneous graph to learn feature representation for each drug and target, cosine similarity is calculated between each drug and target to construct new matrices similarities. The main innovation of our approach is based on the flagship idea of building a knowledge graph on Homo-sapiens and severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) by combining many sources of information from public datasets related to drug discovery. Then, this information base will be the input of an algorithm based on the deep learning technique for predicting new interactions between drugs and targets.
+
 Authors: Warith Eddine DJEDDI and Sadok BEN YAHIA
 
 Email: waritheddine.jeddi@isikef.u-jendouba.tn
+
 # Quick start
 To reproduce our results:
 1. Untar the file "DrugCoV-master.tar.xz"
